@@ -41,7 +41,7 @@ storage:
       type: gp3
       fsType: ext4
 
-# fixes permissions of volumes becuase besu runs as user `besu` and volumes prefer `root`
+# fixes permissions of volumes because besu runs as user `besu` and volumes prefer `root`
 volumePermissionsFix:
   - local
   - aws
