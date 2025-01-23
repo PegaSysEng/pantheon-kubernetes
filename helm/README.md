@@ -162,7 +162,7 @@ You may optionally deploy our lightweight Quorum Explorer, which is compatible f
 
 **Going into Production**
 
-If you would like to use the Quorum Explorer in a production environment, it is highly recommended to enable OAuth or, at the minimum, local username and password authentication which is natively supported by the Explorer. The `explorerEnvConfig` section of the `explorer-besu.yaml` and `explorer-goquorum.yaml` files contain the variables that you may change. By default `DISABE_AUTH` is set to `true`, which means authentication is disabled. Change this to `false` if you would like to enable authentication. If this is set to `false`, you must also provide at least one authentication OAuth method by filling the variables below (supports all of those listed in the file).
+If you would like to use the Quorum Explorer in a production environment, it is highly recommended to enable OAuth or, at the minimum, local username and password authentication which is natively supported by the Explorer. The `explorerEnvConfig` section of the `explorer-besu.yaml` and `explorer-goquorum.yaml` files contain the variables that you may change. By default `DISABLE_AUTH` is set to `true`, which means authentication is disabled. Change this to `false` if you would like to enable authentication. If this is set to `false`, you must also provide at least one authentication OAuth method by filling the variables below (supports all of those listed in the file).
 
 You may find out more about the variables [here](https://github.com/ConsenSys/quorum-explorer#going-into-production).
 
