@@ -1,9 +1,3 @@
-blockscout:
-  fullnameOverride: blockscout
-  blockscout:
-    database_url: "ecto://postgres:postgres@besu-minikube-postgresql/postgres?ssl=false"
-    ethereum_jsonrpc_endpoint: "besu-node-validator-1"
-
 genesis:
   rawGenesisConfig:
     genesis:
@@ -30,13 +24,13 @@ genesis:
       helm.sh/hook-weight: "-10"
 
 validator-1:
-  fullnameOverride: besu-node-validator-1
+  fullnameOverride: goquorum-node-validator-1
 
 validator-2:
-  fullnameOverride: besu-node-validator-2
+  fullnameOverride: goquorum-node-validator-2
 
 validator-3:
-  fullnameOverride: besu-node-validator-3
+  fullnameOverride: goquorum-node-validator-3
 
 validator-4:
-  fullnameOverride: besu-node-validator-4
+  fullnameOverride: goquorum-node-validator-4

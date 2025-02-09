@@ -19,28 +19,27 @@ maintainers:
     email: joshua.fernandes@consensys.net
 icon: http://besu.hyperledger.org/en/latest/favicon.ico
 dependencies:
-  - name: besu-genesis
-    repository: "file://charts/besu-genesis"
+  - name: goquorum-genesis
+    repository: "file://charts/goquorum-genesis"
     version: 0.1.0
     alias: genesis
-  - name: besu-node
-    repository: "file://charts/besu-node"
+  - name: goquorum-node
+    repository: "file://charts/goquorum-node"
     version: 0.1.0
     alias: validator-1
-  - name: besu-node
-    repository: "file://charts/besu-node"
+  - name: goquorum-node
+    repository: "file://charts/goquorum-node"
     version: 0.1.0
     alias: validator-2
-  - name: besu-node
-    repository: "file://charts/besu-node"
+  - name: goquorum-node
+    repository: "file://charts/goquorum-node"
     version: 0.1.0
     alias: validator-3
-  - name: besu-node
-    repository: "file://charts/besu-node"
+  - name: goquorum-node
+    repository: "file://charts/goquorum-node"
     version: 0.1.0
     alias: validator-4
-  - name: blockscout
-    repository: "file://charts/blockscout"
+  - name: explorer
+    repository: "file://charts/explorer"
     version: 0.1.0
-    alias: blockscout
-
+    alias: explorer
