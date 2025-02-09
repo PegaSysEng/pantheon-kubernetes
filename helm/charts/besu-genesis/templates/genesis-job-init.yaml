@@ -19,7 +19,7 @@ metadata:
 {{- toYaml .Values.initJob.annotations | nindent 4 }}
 {{- end}}
 spec:
-  # backoffLimit: 3
+  backoffLimit: 3
   completions: 1
   template:
     metadata:

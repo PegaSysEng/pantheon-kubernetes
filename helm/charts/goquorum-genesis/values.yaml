@@ -1,10 +1,21 @@
 ---
+initJob:
+  annotations: {} # additional annotations to init job
+
+serviceAccount:
+  annotations: {} # additional annotations for the service account
+
+serviceAccountRole:
+  annotations: {} # additional annotations for the service account role
+
+serviceAccountRoleBinding:
+  annotations: {} # additional annotations for the service account role binding
 
 quorumFlags:
   removeGenesisOnDelete: true
 
 cluster:
-  provider: local  # choose from: local | aws | azure
+  provider: local # choose from: local | aws | azure
   cloudNativeServices: false # set to true to use Cloud Native Services (SecretsManager and IAM for AWS; KeyVault & Managed Identities for Azure)
 
 aws:
@@ -29,21 +40,21 @@ rawGenesisConfig:
   genesis:
     config:
       chainId: 1337
-      algorithm: 
+      algorithm:
         consensus: qbft # choose from: ibft | qbft | raft | clique
         blockperiodseconds: 10
         emptyBlockPeriod: 60
         epochlength: 30000
         requesttimeoutseconds: 20
-    nonce: '0x0'
-    gasLimit: '0x47b760'
-    difficulty: '0x1'
-    coinbase: '0x0000000000000000000000000000000000000000'
+    nonce: "0x0"
+    gasLimit: "0x47b760"
+    difficulty: "0x1"
+    coinbase: "0x0000000000000000000000000000000000000000"
   blockchain:
-    nodes:      # refers to validators/signers
+    nodes: # refers to validators/signers
       generate: true
       count: 4
-    accountPassword: 'password'
+    accountPassword: "password"
 
 image:
   repository: consensys/quorum-k8s-hooks

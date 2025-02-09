@@ -1,5 +1,4 @@
 ---
-
 initJob:
   annotations: {} # additional annotations to init job
 
@@ -16,7 +15,7 @@ quorumFlags:
   removeGenesisOnDelete: true
 
 cluster:
-  provider: local  # choose from: local | aws | azure
+  provider: local # choose from: local | aws | azure
   cloudNativeServices: false # set to true to use Cloud Native Services (SecretsManager and IAM for AWS; KeyVault & Managed Identities for Azure)
 
 aws:
@@ -46,15 +45,14 @@ rawGenesisConfig:
         blockperiodseconds: 10
         epochlength: 30000
         requesttimeoutseconds: 20
-    gasLimit: '0xf7b760' 
-    difficulty: '0x1'
-    coinbase: '0x0000000000000000000000000000000000000000'
+    gasLimit: "0xf7b760"
+    difficulty: "0x1"
+    coinbase: "0x0000000000000000000000000000000000000000"
   blockchain:
     nodes:
       generate: true
       count: 4
-    accountPassword: 'password'
-
+    accountPassword: "password"
 
 image:
   repository: consensys/quorum-k8s-hooks

@@ -61,4 +61,3 @@ spec:
               kubectl delete configmap --namespace {{ .Release.Namespace }} goquorum-peers
 
 {{- end}} 
-
