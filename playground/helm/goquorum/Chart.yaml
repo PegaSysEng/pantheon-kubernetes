@@ -1,11 +1,11 @@
 apiVersion: v1
 version: 0.1.0
 appVersion: 0.1.0
-name: besu-minikube
-description: Besu nodes for a POA network
+name: goquorum-minikube
+description: Go Quorum nodes for a POA network
 keywords:
   - ethereum
-  - besu
+  - goquorum
   - hyperledger
   - enterprise
   - blockchain

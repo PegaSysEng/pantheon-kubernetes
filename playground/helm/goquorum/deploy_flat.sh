@@ -9,5 +9,5 @@ helm upgrade validator-1 --install --namespace goquorum-minikube ../../../helm/c
 helm upgrade validator-2 --install --namespace goquorum-minikube ../../../helm/charts/goquorum-node
 helm upgrade validator-3 --install --namespace goquorum-minikube ../../../helm/charts/goquorum-node
 helm upgrade validator-4 --install --namespace goquorum-minikube ../../../helm/charts/goquorum-node
-helm upgrade explorer    --install --namespace goquorum-minikube ../../../helm/charts/explorer
+helm upgrade explorer    --install --namespace goquorum-minikube --values deploy_flat_values.yaml ../../../helm/charts/explorer
 kubectl apply --namespace goquorum-minikube -f templates/ingress.yaml

@@ -34,3 +34,35 @@ validator-3:
 
 validator-4:
   fullnameOverride: goquorum-node-validator-4
+
+explorer:
+  explorerConfig: |
+    {
+      "algorithm": "qbft",
+      "nodes": [
+        {
+          "name": "validator1",
+          "client": "goquorum",
+          "rpcUrl": "http://goquorum-node-validator-1.goquorum-minikube.svc.cluster.local:8545",
+          "privateTxUrl": ""
+        },
+        {
+          "name": "validator2",
+          "client": "goquorum",
+          "rpcUrl": "http://goquorum-node-validator-2.goquorum-minikube.svc.cluster.local:8545",
+          "privateTxUrl": ""
+        },
+        {
+          "name": "validator3",
+          "client": "goquorum",
+          "rpcUrl": "http://goquorum-node-validator-3.goquorum-minikube.svc.cluster.local:8545",
+          "privateTxUrl": ""
+        },
+        {
+          "name": "validator4",
+          "client": "goquorum",
+          "rpcUrl": "http://goquorum-node-validator-4.goquorum-minikube.svc.cluster.local:8545",
+          "privateTxUrl": ""
+        }
+      ]
+    }
