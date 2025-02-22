@@ -72,7 +72,7 @@ podAnnotations:
   {}
 # iam.amazonaws.com/role: es-cluster
 
-# additionals labels
+# additional labels
 labels: {}
 
 esJavaOpts: "" # example: "-Xmx1g -Xms1g"
