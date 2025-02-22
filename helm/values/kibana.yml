@@ -40,7 +40,7 @@ image: "docker.elastic.co/kibana/kibana"
 imageTag: "7.16.3"
 imagePullPolicy: "IfNotPresent"
 
-# additionals labels
+# additional labels
 labels: {}
 
 podAnnotations:
