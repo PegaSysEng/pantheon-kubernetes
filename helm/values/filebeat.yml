@@ -2,7 +2,7 @@
 daemonset:
   # Annotations to apply to the daemonset
   annotations: {}
-  # additionals labels
+  # additional labels
   labels: {}
   affinity: {}
   # Include the daemonset
@@ -93,7 +93,7 @@ daemonset:
 deployment:
   # Annotations to apply to the deployment
   annotations: {}
-  # additionals labels
+  # additional labels
   labels: {}
   affinity: {}
   # Include the deployment
